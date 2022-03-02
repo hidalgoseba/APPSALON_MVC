@@ -150,6 +150,7 @@ class ActiveRecord {
 
         // Resultado de la consulta
         $resultado = self::$db->query($query);
+        debuguear($resultado);
         return [
            'resultado' =>  $resultado,
            'id' => self::$db->insert_id
